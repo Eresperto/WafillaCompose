@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Settings"
+    android:backgroundTint="#1B2D3B"
+    android:background="#1B2D3B">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/header" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp">
+
+            <ImageView
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/line" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingTop="25dp"
+
+                android:src="@drawable/settingsprofile" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_name"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:backgroundTint="#00000000"
+                android:drawableBottom="@drawable/settings_name"
+                android:text="Button"
+                android:textColor="#00000000" />
+
+            <Button
+                android:id="@+id/btn_email"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:backgroundTint="#00000000"
+                android:drawableBottom="@drawable/settings_email"
+                android:text="Button"
+                android:textColor="#00000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/personaldata" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btn_pass"
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:backgroundTint="#00000000"
+                android:drawableBottom="@drawable/settings_pass"
+                android:text="Button"
+                android:textColor="#00000000" />
+
+            <Button
+                android:id="@+id/btn_phone"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:backgroundTint="#00000000"
+                android:drawableBottom="@drawable/settings_phonenumber"
+                android:text="Button"
+                android:textColor="#00000000" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="50dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_socialmedia"
+                android:layout_width="match_parent"
+                android:layout_height="67dp"
+                android:backgroundTint="#00000000"
+                android:drawableBottom="@drawable/settings_socialmedia"
+                android:text="Button"
+                android:textColor="#00000000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingTop="25dp"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_homemenu"
+                    android:layout_width="71dp"
+                    android:layout_height="63dp"
+                    android:backgroundTint="#00000000"
+                    android:drawableBottom="@drawable/btn_homemenu"
+                    android:text="Button"
+                    android:textColor="#00000000" />
+
+                <ImageView
+                    android:id="@+id/hometxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="11dp"
+                    android:src="@drawable/homemenutxt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_lkmenu"
+                    android:layout_width="71dp"
+                    android:layout_height="63dp"
+                    android:backgroundTint="#00000000"
+                    android:drawableBottom="@drawable/btn_lkmenu"
+                    android:text="Button"
+                    android:textColor="#00000000" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:src="@drawable/lkmenutxt"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/btn_exitmenu"
+                    android:layout_width="71dp"
+                    android:layout_height="63dp"
+                    android:backgroundTint="#00000000"
+                    android:drawableBottom="@drawable/btn_exitmenu"
+                    android:text="Button"
+                    android:textColor="#00000000" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:src="@drawable/exitmenutxt"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/btn_apimenu"
+                    android:layout_width="71dp"
+                    android:layout_height="63dp"
+                    android:backgroundTint="#00000000"
+                    android:drawableBottom="@drawable/btn_apimenu"
+                    android:text="Button"
+                    android:textColor="#00000000" />
+
+                <ImageView
+                    android:id="@+id/apitxt"
+                    android:layout_width="match_parent"
+
+                    android:layout_height="9dp"
+                    android:src="@drawable/apitxt"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

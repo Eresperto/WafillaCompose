@@ -1,0 +1,52 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="475dp"
+    android:height="65dp"
+    android:viewportWidth="475"
+    android:viewportHeight="65">
+  <group>
+    <clip-path
+        android:pathData="M0,0h475v65h-475z"/>
+    <path
+        android:pathData="M0,0h475v65h-475z">
+      <aapt:attr name="android:fillColor">
+        <gradient 
+            android:startX="237.07"
+            android:startY="0"
+            android:endX="230.67"
+            android:endY="58.94"
+            android:type="linear">
+          <item android:offset="0" android:color="#FF8DE5A5"/>
+          <item android:offset="1" android:color="#FF41C4AA"/>
+        </gradient>
+      </aapt:attr>
+    </path>
+    <path
+        android:pathData="M417,49.2L446.6,-11.18L450.63,-10.89L421.02,49.49L417,49.2Z"
+        android:fillColor="#A4EAC0"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M445.35,46.96L468.85,-0.98L448.69,-1.69L425.18,46.25L445.35,46.96Z"
+        android:fillColor="#A4EAC0"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M422.21,21.1C424.02,17.4 422.26,13.41 418.3,12.2V12.2C414.33,10.98 409.65,13 407.85,16.71L394.33,44.44L411.2,43.69L422.21,21.1Z"
+        android:fillColor="#A4EAC0"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M1.85,44.5L24.65,-1.91L45.9,-2.47L22.37,43.96L1.85,44.5Z"
+        android:fillColor="#A4EAC0"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M30.75,44.24L53.32,-1.27L55.47,-1.25L32.9,44.27L30.75,44.24Z"
+        android:fillColor="#A4EAC0"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M54.67,29.38C59.46,30.84 65.13,28.38 67.34,23.89L79.91,-1.7L59.85,-1.48L50,18.59C47.79,23.08 49.88,27.91 54.67,29.38V29.38Z"
+        android:fillColor="#A4EAC0"
+        android:fillType="evenOdd"/>
+    <path
+        android:pathData="M0,43H455C466.05,43 475,51.95 475,63V72H0V43Z"
+        android:fillColor="#1B2D3B"/>
+  </group>
+</vector>
