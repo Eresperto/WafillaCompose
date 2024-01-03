@@ -23,6 +23,8 @@ class Registration : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         window.statusBarColor = ContextCompat.getColor(this, R.color.activity)
         setContentView(R.layout.registration)
+
+       //Кнопошки
         var btn_comp = findViewById<Button>(R.id.btn_cp)
         var btn_startup = findViewById<Button>(R.id.btn_strup)
         var edt_name = findViewById<EditText>(R.id.edt_name)
@@ -30,6 +32,9 @@ class Registration : AppCompatActivity() {
         var edt_pass = findViewById<EditText>(R.id.edt_pass)
         var btn_reg = findViewById<Button>(R.id.btn_reg)
         var btn_autoreg = findViewById<Button>(R.id.btn_autoreg)
+
+
+       //Интенты
         val intent_au = Intent(this, Authorization::class.java)
         val intentlk_comp = Intent(this, LKcompanies::class.java)
         val intentlk_str_up = Intent(this, LKstartup::class.java)
@@ -42,10 +47,13 @@ class Registration : AppCompatActivity() {
                  var login = edt_log.text.toString()
                  var pass = edt_pass.text.toString()
                  insertData(name, login, pass, dostup)
-                startActivity(intentlk_comp)
+                     //Переход в ЛК (до меня )
+                     // startActivity(intentlk_comp)
+             //Тестовый переход на главную
+                startActivity(Intent(this,MainCompanies::class.java))
+                finish()
             }
         }
-
         btn_startup.setOnClickListener {
             dostup ="0"
             btn_reg.setOnClickListener {
@@ -54,16 +62,13 @@ class Registration : AppCompatActivity() {
                 var pass = edt_pass.text.toString()
                 insertData(name, login, pass, dostup)
                 startActivity(intentlk_str_up)
+                finish()
             }
         }
-
         btn_autoreg.setOnClickListener {
             startActivity(intent_au)
+            finish()
         }
-
-
-
-
 //        if (loggedIn) {
             // Если пользователь уже вошел, перейти к другой активити
 //            goToMainScreen()
@@ -72,11 +77,6 @@ class Registration : AppCompatActivity() {
 //            showLoginActivity()
 //        }
     }
-
-
-
-
-
 //private fun goToMainScreen() {
 //    val intent = Intent(this, LKcompanies::class.java)
 //    startActivity(intent)
@@ -108,15 +108,7 @@ class Registration : AppCompatActivity() {
             install(Postgrest)
         }
     }
-
-
-
-
-
 }
-
-
-//@kotlinx.serialization.Serializable
 @kotlinx.serialization.Serializable
 data class Testing(
     val id: Int=0,
